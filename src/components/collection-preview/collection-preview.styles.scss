@@ -1,17 +1,33 @@
+$transparent: rgba(0, 0, 0, 0);
+$background: white;
+$shadow: black;
+
 .collection-preview {
 	display: flex;
-	flex-direction: column;
 	margin-bottom: 30px;
-	margin-left: 20px;
-	margin-right: 20px;
-
-	.title {
-		font-size: 28px;
-		margin-bottom: 25px;
-	}
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	z-index: 2;
+	scrollbar-width: 0px;
+	height: 40%;
+	background: linear-gradient(to right, $background 10%, $transparent),
+		linear-gradient(to right, $transparent, $background) 0 10%,
+		linear-gradient(to right, $shadow, $transparent 10%),
+		linear-gradient(to left, $shadow, $transparent 10%);
+	background-attachment: local, local, scroll, scroll;
 
 	.preview {
 		display: flex;
 		justify-content: space-between;
+		margin-bottom: 20px;
 	}
+	.collection-item {
+		padding-inline: 15px;
+	}
+}
+
+.title {
+	font-size: 28px;
+	margin-bottom: 25px;
+	margin-left: 40px;
 }

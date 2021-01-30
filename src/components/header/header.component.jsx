@@ -8,14 +8,15 @@ import { auth } from "../../firebase/firebase.utils";
 import "./header.styles.scss";
 import CartIcon from "../cart-icon/cart-icon.component";
 import CartDropdown from "../cart-dropdown/cart-dropdown.component";
+import { ReactComponent as MainIcon } from "../../assets/tag.svg";
 import { selectCurrentUser } from "../../redux/user/user.selector";
 import { selectCartHidden } from "../../redux/cart/cart.selectors";
 
 const Header = ({ currentUser, cartHidden }) => {
 	return (
 		<div className="header">
-			<Link className="logo-container" to="/">
-				HOME
+			<Link to="/">
+				<MainIcon className="logo-container" size={20} />
 			</Link>
 			<div className="options">
 				<Link className="option" to="/shop">
