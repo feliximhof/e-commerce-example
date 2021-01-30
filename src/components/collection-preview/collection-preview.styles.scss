@@ -31,3 +31,19 @@ $shadow: black;
 	margin-bottom: 25px;
 	margin-left: 40px;
 }
+
+@media only screen and (max-width: 600px) {
+	.collection-preview {
+		display: flex;
+		margin-bottom: 30px;
+		flex-wrap: nowrap;
+		overflow-x: auto;
+		z-index: 2;
+		scrollbar-width: 0px;
+		background: none;
+
+		.collection-item {
+			padding-inline: 5px;
+		}
+	}
+}

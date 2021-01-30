@@ -19,3 +19,19 @@
 		}
 	}
 }
+
+@media only screen and (max-width: 600px) {
+	.collection-page {
+		margin: auto 0px;
+		.items {
+			display: flex;
+			align-self: center;
+
+			flex-direction: column;
+
+			& .collection-item {
+				margin-bottom: 30px;
+			}
+		}
+	}
+}

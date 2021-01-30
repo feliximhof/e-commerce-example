@@ -39,3 +39,24 @@
 		cursor: pointer;
 	}
 }
+
+@media only screen and (max-width: 600px) {
+	.remove-button {
+		padding-right: 17.5px;
+	}
+	.price {
+		padding-left: 5px;
+	}
+	.quantity {
+		display: flex;
+		padding-left: 5px;
+
+		.arrow {
+			cursor: pointer;
+		}
+
+		.value {
+			margin: 0 10px;
+		}
+	}
+}

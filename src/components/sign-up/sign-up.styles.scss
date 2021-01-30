@@ -7,3 +7,22 @@
 		margin: 10px 0;
 	}
 }
+
+@media only screen and (max-width: 600px) {
+	.sign-up {
+		flex-direction: column;
+		width: 100%;
+		margin: 0 auto;
+		.title {
+			margin: 20px auto;
+		}
+		.subtitle {
+			margin: 0px auto;
+		}
+		button {
+			display: flex;
+			margin: 0px auto;
+			align-self: center;
+		}
+	}
+}
